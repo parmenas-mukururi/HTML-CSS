@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ol {
+  list-style-type: none;
+}
+ol li {
+  font-weight: 700;
+  color: red;
+}
+ol #li-1 {
+  color: green;
+}
+ol #li-2 {
+  color: blue;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* prevents adjsutments of font size orientation changes in IE on windoes phone and in ios */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("./assets/image.jpg");
+}
+body nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+}
+body nav .logo {
+  mix-blend-mode: multiply;
+}
+body nav .logo img {
+  width: 50%;
+}
+body nav .nav-text ul {
+  display: flex;
+}
+body nav .nav-text ul li {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+body nav .login {
+  display: flex;
+}
+body nav .login button {
+  height: 40px;
+  border-radius: 10px;
+}
+body nav .login button .register {
+  width: 120px;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body section .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+body section .images img {
+  border-radius: 15px;
+}
+body section .images .img-1 {
+  display: flex;
+  flex-direction: column;
+}
+body section .text {
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+body section .text h1 {
+  flex-wrap: wrap;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+}
+body section .text span {
+  color: rgb(237, 54, 54);
+}
+body section .text h4 {
+  display: flex;
+  justify-content: center;
+  color: rgb(237, 54, 54);
+}
+body section p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+body .buttons {
+  margin: 20px 0;
+}
+body .buttons #get-started {
+  background-color: rgb(156, 67, 156);
+  color: white;
+  font-weight: 400;
+  width: 100vw;
+  height: 50px;
+  border-radius: 15px;
+}
+body .buttons #watch-demo {
+  width: 100vw;
+  border-radius: 15px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+footer img {
+  width: 20vw;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("./assets/image.jpg");
+  }
+  body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+  }
+  body nav .logo {
+    mix-blend-mode: multiply;
+  }
+  body nav .logo img {
+    width: 70%;
+  }
+  body nav .nav-text ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 30px;
+    margin-right: 30px;
+    list-style: none;
+  }
+  body nav .nav-text ul a {
+    text-decoration: none;
+    color: black;
+  }
+  body nav .login {
+    display: flex;
+    gap: 30px;
+    margin-right: 10px;
+  }
+  body nav .login button {
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+  }
+  body nav .login button #register {
+    width: 120px;
+    background-color: rgb(156, 67, 156);
+    color: white;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body section .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  body section .images img {
+    border-radius: 15px;
+  }
+  body section .images .img-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  body section .text {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  body section .text h1 {
+    flex-wrap: wrap;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+  }
+  body section .text span {
+    color: rgb(237, 54, 54);
+  }
+  body section .text h4 {
+    display: flex;
+    justify-content: center;
+    color: rgb(237, 54, 54);
+  }
+  body section p {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+  }
+  body .buttons {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    align-self: center;
+  }
+  body .buttons #get-started {
+    background-color: rgb(156, 67, 156);
+    color: white;
+    font-weight: 300;
+    width: 100vw;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+  body .buttons #watch-demo {
+    width: 100vw;
+    border-radius: 15px;
+    height: 50px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer img {
+    margin-top: 20px;
+    width: 20vw;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("./assets/image.jpg");
+  }
+  body nav {
+    width: 100vw;
+    height: 113px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 0 32px;
+  }
+  body nav .logo {
+    mix-blend-mode: multiply;
+    align-items: center;
+  }
+  body nav .logo img {
+    width: 40%;
+  }
+  body nav .nav-text ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  body section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  body section .lower-sec {
+    align-items: stretch;
+    margin-left: 10px;
+  }
+  body footer img {
+    margin: auto;
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

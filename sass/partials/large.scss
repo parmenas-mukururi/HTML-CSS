@@ -1,0 +1,47 @@
+body {
+  font-family: $my_font;
+  background-image: url("./assets/image.jpg");
+  nav {
+    width: 100vw;
+    height: 113px;
+    justify-content: space-between;
+    align-items: center;
+   margin-right: 20px;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 0 32px;
+
+    .logo {
+      mix-blend-mode: multiply;
+      align-items: center;
+      img {
+        width: 40%;
+      }
+    }
+    .nav-text {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    .lower-sec {
+      align-items: stretch;
+      margin-left: 10px;
+    }
+  }
+  footer {
+    img{
+      margin: auto;
+      width: 10%;
+    }
+  }
+}

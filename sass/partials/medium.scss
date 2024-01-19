@@ -1,0 +1,126 @@
+body {
+  font-family: $my_font;
+  background-image: url("./assets/image.jpg");
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    .logo {
+      mix-blend-mode: multiply;
+      img {
+        width: 70%;
+      }
+    }
+    .nav-text {
+      ul {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        gap: 30px;
+        margin-right: 30px;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .login {
+      display: flex;
+      gap: 30px;
+      margin-right: 10px;
+      button {
+        height: 40px;
+        width: 80px;
+        border-radius: 10px;
+        #register {
+          width: 120px;
+          background-color: rgb(156, 67, 156);
+          color: white;
+        }
+      }
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 20px;
+      img {
+        border-radius: 15px;
+      }
+      .img-1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .img-2 {
+      }
+    }
+    .text {
+      gap: 24px;
+      flex-wrap: wrap;
+      h1 {
+        flex-wrap: wrap;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 20px;
+      }
+      span {
+        color: rgb(237, 54, 54);
+      }
+      h4 {
+        display: flex;
+        justify-content: center;
+        color: rgb(237, 54, 54);
+      }
+    }
+    p {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      margin: 20px 50px;
+    }
+  }
+  .buttons {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    align-self: center;
+    #get-started {
+      background-color: rgb(156, 67, 156);
+      color: white;
+      font-weight: 300;
+      width: 100vw;
+      height: 50px;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+    #watch-demo {
+      width: 100vw;
+      border-radius: 15px;
+      height: 50px;
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  img {
+    margin-top: 20px;
+    width: 20vw;
+  }
+}

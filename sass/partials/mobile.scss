@@ -1,0 +1,124 @@
+/* prevents adjsutments of font size orientation changes in IE on windoes phone and in ios */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: $my_font;
+  background-image: url("./assets/image.jpg");
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    .logo {
+      mix-blend-mode: multiply;
+      img {
+        width: 50%;
+      }
+    }
+    .nav-text {
+      ul {
+        display: flex;
+        li {
+          position: relative;
+          color: black;
+          text-decoration: none;
+          list-style: none;
+        }
+      }
+    }
+    .login {
+      display: flex;
+      button {
+        height: 40px;
+        border-radius: 10px;
+        .register {
+          width: 120px;
+        }
+      }
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 20px;
+      img {
+        border-radius: 15px;
+      }
+      .img-1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .img-2 {
+      }
+    }
+    .text {
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      h1 {
+        flex-wrap: wrap;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 20px;
+      }
+      span {
+        color: rgb(237, 54, 54);
+      }
+      h4 {
+        display: flex;
+        justify-content: center;
+        color: rgb(237, 54, 54);
+      }
+    }
+    p {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+  }
+  .buttons {
+    margin: 20px 0;
+    #get-started {
+      background-color: rgb(156, 67, 156);
+      color: white;
+      font-weight: 400;
+      width: 100vw;
+      height: 50px;
+      border-radius: 15px;
+    }
+    #watch-demo {
+      width: 100vw;
+      border-radius: 15px;
+      height: 50px;
+      margin-top: 15px;
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  img {
+    width: 20vw;
+  }
+}
